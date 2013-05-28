@@ -70,6 +70,18 @@ import java.util.List;
     name = "Solution to analyse",
     description = "Relative path to the \".sln\" file that represents the solution to analyse. If none provided, a \".sln\" file will be searched at the root of the project.",
     global = false, project = true),
+   @Property(
+	    key = DotNetConstants.PROJECT_FILE_KEY,
+	   defaultValue = DotNetConstants.TEST_PROJECT_FILE_DEFVALUE,
+	   name = "Project to analyse",
+	    description = "Absolute/Relative path to the \".*proj\" file that represents the project to analyse. Ignored if a solution file was provided.",
+	    global = false, project = true),
+	@Property(
+	    key = DotNetConstants.TEST_PROJECT_FILE_KEY,
+	    defaultValue = DotNetConstants.TEST_PROJECT_FILE_DEFVALUE,
+	    name = "Test project to analyse",
+	    description = "Absolute/Relative path to the \".*proj\" file that represents the unit test project to analyse. Ignored if a solution file was provided.",
+	   global = false, project = true), 
   @Property(key = DotNetConstants.EXCLUDE_GENERATED_CODE_KEY, defaultValue = DotNetConstants.EXCLUDE_GENERATED_CODE_DEFVALUE + "",
     name = "Exclude generated code",
     description = "Set to false to include generated code like 'Reference.cs' files or '*.designer.cs' files.", global = true,

@@ -44,7 +44,7 @@ public abstract class AbstractDotNetSensor implements Sensor {
 
   private final MicrosoftWindowsEnvironment microsoftWindowsEnvironment;
   private final String toolName;
-  private final String executionMode;
+  protected final String executionMode;
 
   /**
    * Creates an {@link AbstractDotNetSensor} that has a {@link MicrosoftWindowsEnvironment} reference.

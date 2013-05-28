@@ -58,6 +58,8 @@ public class DotNetConfiguration implements BatchExtension, ServerExtension {
     // Core OLD/Maven parameters
     newToPreviousParamMap.put(DotNetConstants.TEST_PROJECT_PATTERN_KEY, Lists.newArrayList("visual.test.project.pattern", "sonar.donet.visualstudio.testProjectPattern"));
     newToPreviousParamMap.put(DotNetConstants.SOLUTION_FILE_KEY, "visual.studio.solution");
+    newToPreviousParamMap.put(DotNetConstants.PROJECT_FILE_KEY, "sonar.dotnet.visualstudio.project.file");
+    newToPreviousParamMap.put(DotNetConstants.TEST_PROJECT_FILE_KEY, "sonar.dotnet.visualstudio.test.project.file");
     newToPreviousParamMap.put(DotNetConstants.BUILD_CONFIGURATION_KEY, Lists.newArrayList("msbuild.configurations", "sonar.dotnet.buildConfigurations"));
     newToPreviousParamMap.put(DotNetConstants.DOTNET_2_0_SDK_DIR_KEY, DotNetConstants.MVN_DOTNET_2_0_SDK_DIR_KEY);
     newToPreviousParamMap.put(DotNetConstants.DOTNET_3_5_SDK_DIR_KEY, DotNetConstants.MVN_DOTNET_3_5_SDK_DIR_KEY);
